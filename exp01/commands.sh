@@ -1,10 +1,11 @@
 #!/bin/bash
+source tools/xlib.sh
 mkdir -p exp01/out
 i=0
 while IFS= read -r c; do
   [ -z "$c" ] && continue
   i=$((i+1)); n=$(printf %02d $i); w=$(echo "$c" | awk '{print $1}')
-  { echo "pradumn@2024UCD2124:~\$ $c"; timeout 40 bash -c "$c" 2>&1 | head -40; } > exp01/out/${n}_${w}.txt
+  xrun "exp01/out/${n}_${w}" "$c" < /dev/null
 done <<'EOF'
 hostname
 ip addr show
