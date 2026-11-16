@@ -7,7 +7,8 @@ U=os.environ["NETACAD_USER"]; P=os.environ["NETACAD_PASS"]
 def clean(t): return t.replace(U,"<user>").replace(P,"***")
 def pt_login():
     time.sleep(40)
-    click_text(r"No"); time.sleep(20)
+    if not click_text(r"No"): sh("xdotool mousemove 997 437 click 1")
+    time.sleep(20)
     sh("xdotool mousemove 792 360 click 1")
     url=None
     for _ in range(30):
@@ -26,7 +27,7 @@ def pt_login():
     time.sleep(15); return True
 def words(name,minconf=30,region=None):
     p=shot(name); out=[]
-    for x in ocr(p):
+    for x in ocr(p,2):
         if float(x["conf"])<minconf: continue
         l,t,w,h=int(x["left"]),int(x["top"]),int(x["width"]),int(x["height"])
         if region and not (region[0]<=l<=region[2] and region[1]<=t<=region[3]): continue
