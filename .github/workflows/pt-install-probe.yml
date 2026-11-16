@@ -24,6 +24,7 @@ jobs:
           bash tools/pt_install.sh
           mkdir -p ptprobe
           export DISPLAY=:99
+          export LIBGL_ALWAYS_SOFTWARE=1
           Xvfb :99 -screen 0 1600x900x24 &
           sleep 2
           BIN=$(command -v packettracer || ls /opt/pt/bin/PacketTracer 2>/dev/null || true)
