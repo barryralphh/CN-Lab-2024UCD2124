@@ -1,4 +1,4 @@
-pradumn@2024UCD2124:~$ ip netns exec r iptables -t nat -A POSTROUTING -s 192.168.1.0/24 -o eth1 -j MASQUERADE && sudo ip netns exec r iptables -t nat -L -n -v
+runner@2024UCD2124:~/CN-Lab$ ip netns exec r iptables -t nat -A POSTROUTING -s 192.168.1.0/24 -o eth1 -j MASQUERADE && sudo ip netns exec r iptables -t nat -L -n -v
 Chain PREROUTING (policy ACCEPT 0 packets, 0 bytes)
  pkts bytes target     prot opt in     out     source               destination         
 

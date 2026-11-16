@@ -1,4 +1,4 @@
-pradumn@2024UCD2124:~$ for n in pc1 r srv; do echo "== $n"; sudo ip netns exec $n ip -br -4 addr; sudo ip netns exec $n ip route; done
+runner@2024UCD2124:~/CN-Lab$ for n in pc1 r srv; do echo "== $n"; sudo ip netns exec $n ip -br -4 addr; sudo ip netns exec $n ip route; done
 == pc1
 lo               UNKNOWN        127.0.0.1/8 
 eth0@if2         UP             192.168.1.10/24 

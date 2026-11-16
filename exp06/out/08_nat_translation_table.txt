@@ -1,5 +1,5 @@
-pradumn@2024UCD2124:~$ ip netns exec r conntrack -L
+runner@2024UCD2124:~/CN-Lab$ ip netns exec r conntrack -L
 conntrack v1.4.9 (conntrack-tools): 3 flow entries have been shown.
-icmp     1 28 src=192.168.1.10 dst=203.0.113.10 type=8 code=0 id=5892 src=203.0.113.10 dst=203.0.113.2 type=0 code=0 id=5892 mark=0 use=1
-icmp     1 26 src=192.168.1.10 dst=203.0.113.10 type=8 code=0 id=5880 src=203.0.113.10 dst=203.0.113.2 type=0 code=0 id=5880 mark=0 use=1
-tcp      6 119 TIME_WAIT src=192.168.1.10 dst=203.0.113.10 sport=32810 dport=80 src=203.0.113.10 dst=203.0.113.2 sport=80 dport=32810 [ASSURED] mark=0 use=1
+tcp      6 116 TIME_WAIT src=192.168.1.10 dst=203.0.113.10 sport=56232 dport=80 src=203.0.113.10 dst=203.0.113.2 sport=80 dport=56232 [ASSURED] mark=0 use=1
+icmp     1 20 src=192.168.1.10 dst=203.0.113.10 type=8 code=0 id=7830 src=203.0.113.10 dst=203.0.113.2 type=0 code=0 id=7830 mark=0 use=1
+icmp     1 23 src=192.168.1.10 dst=203.0.113.10 type=8 code=0 id=7875 src=203.0.113.10 dst=203.0.113.2 type=0 code=0 id=7875 mark=0 use=1

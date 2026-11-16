@@ -1,18 +1,17 @@
-pradumn@2024UCD2124:~$ ip netns exec srv timeout 5 tcpdump -ni eth0 -c 4 icmp & sleep 1; sudo ip netns exec pc1 ping -c 2 203.0.113.10; wait
-libibverbs: Warning: couldn't open config directory '/etc/libibverbs.d'.
+runner@2024UCD2124:~/CN-Lab$ ip netns exec srv timeout 5 tcpdump -ni eth0 -c 4 icmp & sleep 1; sudo ip netns exec pc1 ping -c 2 203.0.113.10; wait
 tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
 listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
 PING 203.0.113.10 (203.0.113.10) 56(84) bytes of data.
-64 bytes from 203.0.113.10: icmp_seq=1 ttl=63 time=0.082 ms
-64 bytes from 203.0.113.10: icmp_seq=2 ttl=63 time=0.061 ms
+64 bytes from 203.0.113.10: icmp_seq=1 ttl=63 time=0.062 ms
+64 bytes from 203.0.113.10: icmp_seq=2 ttl=63 time=0.069 ms
 
 --- 203.0.113.10 ping statistics ---
-2 packets transmitted, 2 received, 0% packet loss, time 1028ms
-rtt min/avg/max/mdev = 0.061/0.071/0.082/0.010 ms
-15:52:26.180897 IP 203.0.113.2 > 203.0.113.10: ICMP echo request, id 5892, seq 1, length 64
-15:52:26.180935 IP 203.0.113.10 > 203.0.113.2: ICMP echo reply, id 5892, seq 1, length 64
-15:52:27.209015 IP 203.0.113.2 > 203.0.113.10: ICMP echo request, id 5892, seq 2, length 64
-15:52:27.209030 IP 203.0.113.10 > 203.0.113.2: ICMP echo reply, id 5892, seq 2, length 64
+2 packets transmitted, 2 received, 0% packet loss, time 1062ms
+rtt min/avg/max/mdev = 0.062/0.065/0.069/0.003 ms
+20:31:39.858303 IP 203.0.113.2 > 203.0.113.10: ICMP echo request, id 7875, seq 1, length 64
+20:31:39.858316 IP 203.0.113.10 > 203.0.113.2: ICMP echo reply, id 7875, seq 1, length 64
+20:31:40.920352 IP 203.0.113.2 > 203.0.113.10: ICMP echo request, id 7875, seq 2, length 64
+20:31:40.920367 IP 203.0.113.10 > 203.0.113.2: ICMP echo reply, id 7875, seq 2, length 64
 4 packets captured
 4 packets received by filter
 0 packets dropped by kernel
