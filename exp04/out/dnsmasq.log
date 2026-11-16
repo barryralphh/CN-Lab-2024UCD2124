@@ -99,3 +99,4 @@ dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 28 broadcast  10.0.1.255
 dnsmasq-dhcp[6642]: 2318352128 sent size: 11 option: 12 hostname  2024UCD2124
 dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option:  6 dns-server  8.8.8.8
 dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option:  3 router  10.0.1.1
+dnsmasq[6642]: exiting on receipt of SIGTERM
