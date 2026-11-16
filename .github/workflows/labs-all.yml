@@ -17,7 +17,9 @@ jobs:
           sudo systemctl stop dnsmasq || true
           sudo hostname 2024UCD2124
       - name: exp01
-        run: bash exp01/commands.sh && bash tools/save.sh "exp01: real xterm screenshots"
+        run: |
+          bash exp01/commands.sh
+          bash tools/save.sh "exp01 real xterm screenshots"
         continue-on-error: true
       - name: exp02
         run: bash tools/runexp.sh 02
