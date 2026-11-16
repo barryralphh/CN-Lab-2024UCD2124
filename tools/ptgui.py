@@ -17,4 +17,4 @@ def click_text(pat,occurrence=0,name="tmp"):
     h=hits[occurrence]; x=int(h["left"])+int(h["width"])//2; y=int(h["top"])+int(h["height"])//2
     sh(f"xdotool mousemove {x} {y} click 1"); print("clicked",pat,x,y,flush=True); return True
 def key(k): sh(f"xdotool key {k}")
-def type_(s): sh(f"xdotool type --delay 40 '{s}'")
+def type_(s): subprocess.run(['xdotool','type','--delay','60','--',s])
