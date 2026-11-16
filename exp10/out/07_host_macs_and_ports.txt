@@ -1,0 +1,9 @@
+pradumn@2024UCD2124:~$ for h in r pc1 pc2 pc3; do echo -n "$h: "; sudo ip netns exec $h cat /sys/class/net/eth0/address; done; sudo ip netns exec sw bridge link show
+r: e6:41:a0:b1:1e:b3
+pc1: 96:f4:53:41:4b:b0
+pc2: ea:f9:f9:cf:20:46
+pc3: c2:7d:3b:27:9a:ed
+3: p-r-eth0@br0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 master br0 state forwarding priority 32 cost 2 
+4: p-pc1-eth0@br0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 master br0 state forwarding priority 32 cost 2 
+5: p-pc2-eth0@br0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 master br0 state forwarding priority 32 cost 2 
+6: p-pc3-eth0@br0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 master br0 state forwarding priority 32 cost 2 

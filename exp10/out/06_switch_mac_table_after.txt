@@ -1,0 +1,5 @@
+pradumn@2024UCD2124:~$ ip netns exec sw bridge fdb show br br0 | grep -v permanent
+e6:41:a0:b1:1e:b3 dev p-r-eth0 master br0 
+96:f4:53:41:4b:b0 dev p-pc1-eth0 master br0 
+ea:f9:f9:cf:20:46 dev p-pc2-eth0 master br0 
+c2:7d:3b:27:9a:ed dev p-pc3-eth0 master br0 

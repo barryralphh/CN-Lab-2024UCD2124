@@ -1,0 +1,2 @@
+pradumn@2024UCD2124:~$ tshark -r exp10/out/dhcp.pcap -Y dhcp -V -c 2 | head -55
+tshark: You don't have permission to read the file "exp10/out/dhcp.pcap".
