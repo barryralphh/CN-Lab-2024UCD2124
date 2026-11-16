@@ -1,0 +1,2 @@
+2097190 Cisco Packet Tracer Window 2097190 Position: 0,0 (screen: 0) Geometry: 1600x900
+2097226 Scripting - File Script Module (Stopped) Window 2097226 Position: 169,39 (screen: 0) Geometry: 1262x822

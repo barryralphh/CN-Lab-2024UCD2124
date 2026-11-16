@@ -1,3 +1,5 @@
+|WINS:2097190 Cisco Packet Tracer Window 2097190 Position: 0,0 (screen: 0) Geometry: 1600x900
+2097226 Scripting - File Script Module (Stopped) Window 2097226 Position: 169,39 (screen: 0) Geometry: 1262x822
 |File
 
 Edit
@@ -10,90 +12,88 @@ Extensions
 
 Window Help
 
-Cd
-
--
-
-A
-
-OA @er4
-
-® @®Onrmfr BSr
-
-eo ee
-
-Info
-
-General
-
-Script Engine
-
-Custom Interfaces
-
-Data Store
+BmeeBtOra GAL VARQRAQAOA EFS
 
 rc
 
-Qa
+[=] Q «4
 
 or
 
-al
+Bvmeo?e 4 ha
 
-function mk(label,x,y){ try{ var lw=ipc.appWindow().getActiveWorkspace().getLogicalWorkspace(); var n=lw.addDevice(8,'PC-PT',x,y); ipc.network().getDevice(n).setName(label); }cat
+Ph
 
-Physic
+ca
 
-mk('START’,150,150);
+Root <>) 4
 
-+” | 4a ||
+00:51
 
-var fm=null;
+Time: 00:01:4
 
-try{ fm=ipc.systemFileManager(); }catch(e){}
+©)(»>
 
-mk(fm?'SFMyes':'SFMno’,150,250);
+‘$2. Simulation
 
-var ok=false;
+—~
 
-try{ if(fm){ fm.writeTextToFile("/tmp/t.txt',"hi'); ok=true; } }catch(e){ mk(‘WERR',150,350); }
+a
 
-mk(ok?"WROTE':'NOWRITE',150,450);
+t
 
-Tir
+o |
 
-II
+“in in tow J
 
-Itime
+g
 
-imulation
+L
 
-Rms a
+1 Se Se Ss Fs
 
-+
+we OW
 
-Rename
+PTB8200
 
-Import
+4331
 
-Import Dir
+4321
 
-Export
+IR8340
 
-Start
+1941
 
-Debug
+2901
 
-Q Search for device
+2911
+
+81910X S19HGW
+
+829
+
+1240
+
+IRI
+
+i
+
+oO Scenario 6 . Fire Last Status Source Destination Type Color Time(sec) Periodic Num Edit Delete
+
+Q|se
+
+ord
 
 4
 
-Tk
+>
 
-DI
+PDU List Window
 
-find
+ws
 
-a#whm ye
+@#im yj @
+
+Togg
 
 (Select a Device to Drag and Drop to the Workspace)
