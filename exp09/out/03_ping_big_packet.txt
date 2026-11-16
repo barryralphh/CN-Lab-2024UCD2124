@@ -1,0 +1,8 @@
+pradumn@2024UCD2124:~$ ip netns exec pc1 ping -c 2 -s 1000 10.0.2.2
+PING 10.0.2.2 (10.0.2.2) 1000(1028) bytes of data.
+1008 bytes from 10.0.2.2: icmp_seq=1 ttl=63 time=0.048 ms
+1008 bytes from 10.0.2.2: icmp_seq=2 ttl=63 time=0.061 ms
+
+--- 10.0.2.2 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1057ms
+rtt min/avg/max/mdev = 0.048/0.054/0.061/0.006 ms

@@ -1,0 +1,2 @@
+pradumn@2024UCD2124:~$ tshark -r exp09/out/icmp.pcap -Y 'icmp.type==11' -V -c 1 | head -50
+tshark: You don't have permission to read the file "exp09/out/icmp.pcap".
