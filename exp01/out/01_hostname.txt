@@ -1,2 +1,2 @@
-pradumn@2024UCD2124:~$ hostname
-runnervmccnms
+runner@2024UCD2124:~/CN-Lab$ hostname
+2024UCD2124

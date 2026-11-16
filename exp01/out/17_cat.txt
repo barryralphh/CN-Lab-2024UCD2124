@@ -1,4 +1,4 @@
-pradumn@2024UCD2124:~$ cat /etc/resolv.conf
+runner@2024UCD2124:~/CN-Lab$ cat /etc/resolv.conf
 # This is /run/systemd/resolve/stub-resolv.conf managed by man:systemd-resolved(8).
 # Do not edit.
 #
@@ -21,4 +21,4 @@ pradumn@2024UCD2124:~$ cat /etc/resolv.conf
 
 nameserver 127.0.0.53
 options edns0 trust-ad
-search fdnaopwv2m5ebcgs4ycuf41wnh.bx.internal.cloudapp.net
+search us-west-2.compute.internal

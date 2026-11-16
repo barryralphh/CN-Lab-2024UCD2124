@@ -1,2 +1,2 @@
-pradumn@2024UCD2124:~$ ip neigh
-10.1.0.1 dev eth0 lladdr 12:34:56:78:9a:bc REACHABLE 
+runner@2024UCD2124:~/CN-Lab$ ip neigh
+10.0.128.1 dev enp39s0 lladdr 02:ff:dc:16:d3:5f REACHABLE 

@@ -1,16 +1,16 @@
-pradumn@2024UCD2124:~$ curl -I https://example.com
+runner@2024UCD2124:~/CN-Lab$ curl -I https://example.com
   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
                                  Dload  Upload  Total   Spent   Left   Speed
   0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0                              0
 HTTP/2 200 
-date: Mon, 16 Nov 2026 15:45:48 GMT
+date: Mon, 16 Nov 2026 20:29:36 GMT
 content-type: text/html; charset=utf-8
 server: cloudflare
 last-modified: Mon, 16 Nov 2026 00:30:20 GMT
 allow: GET, HEAD
 accept-ranges: bytes
-age: 5158
+age: 10540
 cf-cache-status: HIT
-cf-ray: a5b79ff4dac6b40a-YYZ
+cf-ray: a5b93fb1fe70758f-PDX
 alt-svc: h3=":443"; ma=86400
 

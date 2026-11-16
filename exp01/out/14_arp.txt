@@ -1,2 +1,2 @@
-pradumn@2024UCD2124:~$ arp -a
-_gateway (10.1.0.1) at 12:34:56:78:9a:bc [ether] on eth0
+runner@2024UCD2124:~/CN-Lab$ arp -a
+ip-10-0-128-1.us-west-2.compute.internal (10.0.128.1) at 02:ff:dc:16:d3:5f [ether] on enp39s0

@@ -1,9 +1,11 @@
-pradumn@2024UCD2124:~$ tracepath -m 8 8.8.8.8
- 1?: [LOCALHOST]                      pmtu 1500
- 1:  no reply
- 2:  no reply
+runner@2024UCD2124:~/CN-Lab$ tracepath -m 8 8.8.8.8
+ 1?: [LOCALHOST]                      pmtu 9001
+ 1:  ip-10-0-128-1.us-west-2.compute.internal              0.117ms pmtu 8500
+ 1:  ip-10-0-10-69.us-west-2.compute.internal              0.320ms 
+ 2:  ip-10-0-0-1.us-west-2.compute.internal                0.851ms pmtu 1500
+ 2:  240.64.69.129                                         6.519ms asymm  6 
  3:  no reply
- 4:  no reply
+ 4:  99.83.117.223                                         6.530ms asymm 11 
  5:  no reply
  6:  no reply
  7:  no reply

@@ -1,12 +1,12 @@
-pradumn@2024UCD2124:~$ netstat -tuln
+runner@2024UCD2124:~/CN-Lab$ netstat -tuln
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN     
 tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN     
 tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN     
-tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN     
 tcp6       0      0 :::22                   :::*                    LISTEN     
 udp        0      0 127.0.0.54:53           0.0.0.0:*                          
 udp        0      0 127.0.0.53:53           0.0.0.0:*                          
-udp        0      0 10.1.0.226:68           0.0.0.0:*                          
+udp        0      0 10.0.136.3:68           0.0.0.0:*                          
 udp        0      0 127.0.0.1:323           0.0.0.0:*                          
 udp6       0      0 ::1:323                 :::*                               
