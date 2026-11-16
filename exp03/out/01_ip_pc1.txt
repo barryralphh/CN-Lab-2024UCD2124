@@ -1,0 +1,5 @@
+pradumn@2024UCD2124:~$ ip netns exec pc1 ip -br addr; sudo ip netns exec pc1 ip route
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0@if3         UP             10.0.1.2/24 fe80::7404:ebff:feaa:5c6/64 
+default via 10.0.1.1 dev eth0 
+10.0.1.0/24 dev eth0 proto kernel scope link src 10.0.1.2 
