@@ -1,7 +1,7 @@
-pradumn@2024UCD2124:~$ ip netns exec pc3 ip addr show eth0
+runner@2024UCD2124:~/CN-Lab$ ip netns exec pc3 ip addr show eth0
 2: eth0@if5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
-    link/ether ba:5a:c9:b1:d0:37 brd ff:ff:ff:ff:ff:ff link-netns sw
+    link/ether a2:63:1e:07:11:5a brd ff:ff:ff:ff:ff:ff link-netns sw
     inet 192.168.10.13/24 scope global eth0
        valid_lft forever preferred_lft forever
-    inet6 fe80::b85a:c9ff:feb1:d037/64 scope link tentative proto kernel_ll 
+    inet6 fe80::a063:1eff:fe07:115a/64 scope link proto kernel_ll 
        valid_lft forever preferred_lft forever
