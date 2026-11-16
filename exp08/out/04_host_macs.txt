@@ -1,0 +1,3 @@
+pradumn@2024UCD2124:~$ for h in pc1 pc2; do echo -n "$h: "; sudo ip netns exec $h cat /sys/class/net/eth0/address; done
+pc1: 16:9d:f2:8b:6e:d5
+pc2: 12:cd:90:1c:ca:3a

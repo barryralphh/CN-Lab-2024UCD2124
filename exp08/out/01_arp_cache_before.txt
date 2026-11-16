@@ -1,0 +1,2 @@
+pradumn@2024UCD2124:~$ ip netns exec pc1 ip neigh show; echo '(cache empty)'
+(cache empty)

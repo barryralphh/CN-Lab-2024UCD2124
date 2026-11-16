@@ -1,0 +1,2 @@
+pradumn@2024UCD2124:~$ tshark -r exp08/out/arp.pcap -Y arp
+tshark: You don't have permission to read the file "exp08/out/arp.pcap".
