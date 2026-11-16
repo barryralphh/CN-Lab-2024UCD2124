@@ -1,102 +1,101 @@
-dnsmasq[5269]: started, version 2.92 DNS disabled
-dnsmasq[5269]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
-dnsmasq-dhcp[5269]: DHCP, IP range 10.0.1.100 -- 10.0.1.150, lease time 12h
-dnsmasq-dhcp[5269]: DHCP, sockets bound exclusively to interface eth0
-dnsmasq-dhcp[5269]: 3457751091 available DHCP range: 10.0.1.100 -- 10.0.1.150
-dnsmasq-dhcp[5269]: 3457751091 client provides name: runnervmccnms
-dnsmasq-dhcp[5269]: 3457751091 DHCPDISCOVER(eth0) d6:32:a9:13:21:56 
-dnsmasq-dhcp[5269]: 3457751091 tags: eth0
-dnsmasq-dhcp[5269]: 3457751091 DHCPOFFER(eth0) 10.0.1.131 d6:32:a9:13:21:56 
-dnsmasq-dhcp[5269]: 3457751091 requested options: 1:netmask, 28:broadcast, 2:time-offset, 3:router, 
-dnsmasq-dhcp[5269]: 3457751091 requested options: 15:domain-name, 6:dns-server, 119:domain-search, 
-dnsmasq-dhcp[5269]: 3457751091 requested options: 12:hostname, 44:netbios-ns, 47:netbios-scope, 
-dnsmasq-dhcp[5269]: 3457751091 requested options: 26:mtu, 121:classless-static-route, 42:ntp-server
-dnsmasq-dhcp[5269]: 3457751091 next server: 10.0.1.1
-dnsmasq-dhcp[5269]: 3457751091 sent size:  1 option: 53 message-type  2
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option: 54 server-identifier  10.0.1.1
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option: 51 lease-time  12h
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option: 58 T1  6h
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option: 59 T2  10h30m
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option:  1 netmask  255.255.255.0
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option: 28 broadcast  10.0.1.255
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option:  6 dns-server  8.8.8.8
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option:  3 router  10.0.1.1
-dnsmasq-dhcp[5269]: 3457751091 available DHCP range: 10.0.1.100 -- 10.0.1.150
-dnsmasq-dhcp[5269]: 3457751091 client provides name: runnervmccnms
-dnsmasq-dhcp[5269]: 3457751091 DHCPREQUEST(eth0) 10.0.1.131 d6:32:a9:13:21:56 
-dnsmasq-dhcp[5269]: 3457751091 tags: eth0
-dnsmasq-dhcp[5269]: 3457751091 DHCPACK(eth0) 10.0.1.131 d6:32:a9:13:21:56 runnervmccnms
-dnsmasq-dhcp[5269]: 3457751091 requested options: 1:netmask, 28:broadcast, 2:time-offset, 3:router, 
-dnsmasq-dhcp[5269]: 3457751091 requested options: 15:domain-name, 6:dns-server, 119:domain-search, 
-dnsmasq-dhcp[5269]: 3457751091 requested options: 12:hostname, 44:netbios-ns, 47:netbios-scope, 
-dnsmasq-dhcp[5269]: 3457751091 requested options: 26:mtu, 121:classless-static-route, 42:ntp-server
-dnsmasq-dhcp[5269]: 3457751091 next server: 10.0.1.1
-dnsmasq-dhcp[5269]: 3457751091 sent size:  1 option: 53 message-type  5
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option: 54 server-identifier  10.0.1.1
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option: 51 lease-time  12h
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option: 58 T1  6h
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option: 59 T2  10h30m
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option:  1 netmask  255.255.255.0
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option: 28 broadcast  10.0.1.255
-dnsmasq-dhcp[5269]: 3457751091 sent size: 13 option: 12 hostname  runnervmccnms
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option:  6 dns-server  8.8.8.8
-dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option:  3 router  10.0.1.1
-dnsmasq-dhcp[5269]: 46420860 available DHCP range: 10.0.1.100 -- 10.0.1.150
-dnsmasq-dhcp[5269]: 46420860 client provides name: runnervmccnms
-dnsmasq-dhcp[5269]: 46420860 DHCPDISCOVER(eth0) 52:7d:2a:d0:76:da 
-dnsmasq-dhcp[5269]: 46420860 tags: eth0
-dnsmasq-dhcp[5269]: 46420860 DHCPOFFER(eth0) 10.0.1.137 52:7d:2a:d0:76:da 
-dnsmasq-dhcp[5269]: 46420860 requested options: 1:netmask, 28:broadcast, 2:time-offset, 3:router, 
-dnsmasq-dhcp[5269]: 46420860 requested options: 15:domain-name, 6:dns-server, 119:domain-search, 
-dnsmasq-dhcp[5269]: 46420860 requested options: 12:hostname, 44:netbios-ns, 47:netbios-scope, 
-dnsmasq-dhcp[5269]: 46420860 requested options: 26:mtu, 121:classless-static-route, 42:ntp-server
-dnsmasq-dhcp[5269]: 46420860 next server: 10.0.1.1
-dnsmasq-dhcp[5269]: 46420860 sent size:  1 option: 53 message-type  2
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 54 server-identifier  10.0.1.1
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 51 lease-time  12h
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 58 T1  6h
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 59 T2  10h30m
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option:  1 netmask  255.255.255.0
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 28 broadcast  10.0.1.255
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option:  6 dns-server  8.8.8.8
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option:  3 router  10.0.1.1
-dnsmasq-dhcp[5269]: 46420860 available DHCP range: 10.0.1.100 -- 10.0.1.150
-dnsmasq-dhcp[5269]: 46420860 client provides name: runnervmccnms
-dnsmasq-dhcp[5269]: 46420860 DHCPDISCOVER(eth0) 52:7d:2a:d0:76:da 
-dnsmasq-dhcp[5269]: 46420860 tags: eth0
-dnsmasq-dhcp[5269]: 46420860 DHCPOFFER(eth0) 10.0.1.137 52:7d:2a:d0:76:da 
-dnsmasq-dhcp[5269]: 46420860 requested options: 1:netmask, 28:broadcast, 2:time-offset, 3:router, 
-dnsmasq-dhcp[5269]: 46420860 requested options: 15:domain-name, 6:dns-server, 119:domain-search, 
-dnsmasq-dhcp[5269]: 46420860 requested options: 12:hostname, 44:netbios-ns, 47:netbios-scope, 
-dnsmasq-dhcp[5269]: 46420860 requested options: 26:mtu, 121:classless-static-route, 42:ntp-server
-dnsmasq-dhcp[5269]: 46420860 next server: 10.0.1.1
-dnsmasq-dhcp[5269]: 46420860 sent size:  1 option: 53 message-type  2
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 54 server-identifier  10.0.1.1
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 51 lease-time  12h
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 58 T1  6h
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 59 T2  10h30m
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option:  1 netmask  255.255.255.0
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 28 broadcast  10.0.1.255
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option:  6 dns-server  8.8.8.8
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option:  3 router  10.0.1.1
-dnsmasq-dhcp[5269]: 46420860 available DHCP range: 10.0.1.100 -- 10.0.1.150
-dnsmasq-dhcp[5269]: 46420860 client provides name: runnervmccnms
-dnsmasq-dhcp[5269]: 46420860 DHCPREQUEST(eth0) 10.0.1.137 52:7d:2a:d0:76:da 
-dnsmasq-dhcp[5269]: 46420860 tags: eth0
-dnsmasq-dhcp[5269]: 46420860 DHCPACK(eth0) 10.0.1.137 52:7d:2a:d0:76:da runnervmccnms
-dnsmasq-dhcp[5269]: 46420860 requested options: 1:netmask, 28:broadcast, 2:time-offset, 3:router, 
-dnsmasq-dhcp[5269]: 46420860 requested options: 15:domain-name, 6:dns-server, 119:domain-search, 
-dnsmasq-dhcp[5269]: 46420860 requested options: 12:hostname, 44:netbios-ns, 47:netbios-scope, 
-dnsmasq-dhcp[5269]: 46420860 requested options: 26:mtu, 121:classless-static-route, 42:ntp-server
-dnsmasq-dhcp[5269]: 46420860 next server: 10.0.1.1
-dnsmasq-dhcp[5269]: 46420860 sent size:  1 option: 53 message-type  5
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 54 server-identifier  10.0.1.1
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 51 lease-time  12h
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 58 T1  6h
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 59 T2  10h30m
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option:  1 netmask  255.255.255.0
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 28 broadcast  10.0.1.255
-dnsmasq-dhcp[5269]: 46420860 sent size: 13 option: 12 hostname  runnervmccnms
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option:  6 dns-server  8.8.8.8
-dnsmasq-dhcp[5269]: 46420860 sent size:  4 option:  3 router  10.0.1.1
-dnsmasq[5269]: exiting on receipt of SIGTERM
+dnsmasq[6642]: started, version 2.92 DNS disabled
+dnsmasq[6642]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+dnsmasq-dhcp[6642]: DHCP, IP range 10.0.1.100 -- 10.0.1.150, lease time 12h
+dnsmasq-dhcp[6642]: DHCP, sockets bound exclusively to interface eth0
+dnsmasq-dhcp[6642]: 1202109704 available DHCP range: 10.0.1.100 -- 10.0.1.150
+dnsmasq-dhcp[6642]: 1202109704 client provides name: 2024UCD2124
+dnsmasq-dhcp[6642]: 1202109704 DHCPDISCOVER(eth0) f2:71:b4:10:ca:0e 
+dnsmasq-dhcp[6642]: 1202109704 tags: eth0
+dnsmasq-dhcp[6642]: 1202109704 DHCPOFFER(eth0) 10.0.1.142 f2:71:b4:10:ca:0e 
+dnsmasq-dhcp[6642]: 1202109704 requested options: 1:netmask, 28:broadcast, 2:time-offset, 3:router, 
+dnsmasq-dhcp[6642]: 1202109704 requested options: 15:domain-name, 6:dns-server, 119:domain-search, 
+dnsmasq-dhcp[6642]: 1202109704 requested options: 12:hostname, 44:netbios-ns, 47:netbios-scope, 
+dnsmasq-dhcp[6642]: 1202109704 requested options: 26:mtu, 121:classless-static-route, 42:ntp-server
+dnsmasq-dhcp[6642]: 1202109704 next server: 10.0.1.1
+dnsmasq-dhcp[6642]: 1202109704 sent size:  1 option: 53 message-type  2
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option: 54 server-identifier  10.0.1.1
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option: 51 lease-time  12h
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option: 58 T1  6h
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option: 59 T2  10h30m
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option:  1 netmask  255.255.255.0
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option: 28 broadcast  10.0.1.255
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option:  6 dns-server  8.8.8.8
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option:  3 router  10.0.1.1
+dnsmasq-dhcp[6642]: 1202109704 available DHCP range: 10.0.1.100 -- 10.0.1.150
+dnsmasq-dhcp[6642]: 1202109704 client provides name: 2024UCD2124
+dnsmasq-dhcp[6642]: 1202109704 DHCPREQUEST(eth0) 10.0.1.142 f2:71:b4:10:ca:0e 
+dnsmasq-dhcp[6642]: 1202109704 tags: eth0
+dnsmasq-dhcp[6642]: 1202109704 DHCPACK(eth0) 10.0.1.142 f2:71:b4:10:ca:0e 2024UCD2124
+dnsmasq-dhcp[6642]: 1202109704 requested options: 1:netmask, 28:broadcast, 2:time-offset, 3:router, 
+dnsmasq-dhcp[6642]: 1202109704 requested options: 15:domain-name, 6:dns-server, 119:domain-search, 
+dnsmasq-dhcp[6642]: 1202109704 requested options: 12:hostname, 44:netbios-ns, 47:netbios-scope, 
+dnsmasq-dhcp[6642]: 1202109704 requested options: 26:mtu, 121:classless-static-route, 42:ntp-server
+dnsmasq-dhcp[6642]: 1202109704 next server: 10.0.1.1
+dnsmasq-dhcp[6642]: 1202109704 sent size:  1 option: 53 message-type  5
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option: 54 server-identifier  10.0.1.1
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option: 51 lease-time  12h
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option: 58 T1  6h
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option: 59 T2  10h30m
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option:  1 netmask  255.255.255.0
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option: 28 broadcast  10.0.1.255
+dnsmasq-dhcp[6642]: 1202109704 sent size: 11 option: 12 hostname  2024UCD2124
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option:  6 dns-server  8.8.8.8
+dnsmasq-dhcp[6642]: 1202109704 sent size:  4 option:  3 router  10.0.1.1
+dnsmasq-dhcp[6642]: 2318352128 available DHCP range: 10.0.1.100 -- 10.0.1.150
+dnsmasq-dhcp[6642]: 2318352128 client provides name: 2024UCD2124
+dnsmasq-dhcp[6642]: 2318352128 DHCPDISCOVER(eth0) d2:f6:a4:30:8c:bc 
+dnsmasq-dhcp[6642]: 2318352128 tags: eth0
+dnsmasq-dhcp[6642]: 2318352128 DHCPOFFER(eth0) 10.0.1.117 d2:f6:a4:30:8c:bc 
+dnsmasq-dhcp[6642]: 2318352128 requested options: 1:netmask, 28:broadcast, 2:time-offset, 3:router, 
+dnsmasq-dhcp[6642]: 2318352128 requested options: 15:domain-name, 6:dns-server, 119:domain-search, 
+dnsmasq-dhcp[6642]: 2318352128 requested options: 12:hostname, 44:netbios-ns, 47:netbios-scope, 
+dnsmasq-dhcp[6642]: 2318352128 requested options: 26:mtu, 121:classless-static-route, 42:ntp-server
+dnsmasq-dhcp[6642]: 2318352128 next server: 10.0.1.1
+dnsmasq-dhcp[6642]: 2318352128 sent size:  1 option: 53 message-type  2
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 54 server-identifier  10.0.1.1
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 51 lease-time  12h
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 58 T1  6h
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 59 T2  10h30m
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option:  1 netmask  255.255.255.0
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 28 broadcast  10.0.1.255
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option:  6 dns-server  8.8.8.8
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option:  3 router  10.0.1.1
+dnsmasq-dhcp[6642]: 2318352128 available DHCP range: 10.0.1.100 -- 10.0.1.150
+dnsmasq-dhcp[6642]: 2318352128 client provides name: 2024UCD2124
+dnsmasq-dhcp[6642]: 2318352128 DHCPDISCOVER(eth0) d2:f6:a4:30:8c:bc 
+dnsmasq-dhcp[6642]: 2318352128 tags: eth0
+dnsmasq-dhcp[6642]: 2318352128 DHCPOFFER(eth0) 10.0.1.117 d2:f6:a4:30:8c:bc 
+dnsmasq-dhcp[6642]: 2318352128 requested options: 1:netmask, 28:broadcast, 2:time-offset, 3:router, 
+dnsmasq-dhcp[6642]: 2318352128 requested options: 15:domain-name, 6:dns-server, 119:domain-search, 
+dnsmasq-dhcp[6642]: 2318352128 requested options: 12:hostname, 44:netbios-ns, 47:netbios-scope, 
+dnsmasq-dhcp[6642]: 2318352128 requested options: 26:mtu, 121:classless-static-route, 42:ntp-server
+dnsmasq-dhcp[6642]: 2318352128 next server: 10.0.1.1
+dnsmasq-dhcp[6642]: 2318352128 sent size:  1 option: 53 message-type  2
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 54 server-identifier  10.0.1.1
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 51 lease-time  12h
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 58 T1  6h
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 59 T2  10h30m
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option:  1 netmask  255.255.255.0
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 28 broadcast  10.0.1.255
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option:  6 dns-server  8.8.8.8
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option:  3 router  10.0.1.1
+dnsmasq-dhcp[6642]: 2318352128 available DHCP range: 10.0.1.100 -- 10.0.1.150
+dnsmasq-dhcp[6642]: 2318352128 client provides name: 2024UCD2124
+dnsmasq-dhcp[6642]: 2318352128 DHCPREQUEST(eth0) 10.0.1.117 d2:f6:a4:30:8c:bc 
+dnsmasq-dhcp[6642]: 2318352128 tags: eth0
+dnsmasq-dhcp[6642]: 2318352128 DHCPACK(eth0) 10.0.1.117 d2:f6:a4:30:8c:bc 2024UCD2124
+dnsmasq-dhcp[6642]: 2318352128 requested options: 1:netmask, 28:broadcast, 2:time-offset, 3:router, 
+dnsmasq-dhcp[6642]: 2318352128 requested options: 15:domain-name, 6:dns-server, 119:domain-search, 
+dnsmasq-dhcp[6642]: 2318352128 requested options: 12:hostname, 44:netbios-ns, 47:netbios-scope, 
+dnsmasq-dhcp[6642]: 2318352128 requested options: 26:mtu, 121:classless-static-route, 42:ntp-server
+dnsmasq-dhcp[6642]: 2318352128 next server: 10.0.1.1
+dnsmasq-dhcp[6642]: 2318352128 sent size:  1 option: 53 message-type  5
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 54 server-identifier  10.0.1.1
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 51 lease-time  12h
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 58 T1  6h
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 59 T2  10h30m
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option:  1 netmask  255.255.255.0
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option: 28 broadcast  10.0.1.255
+dnsmasq-dhcp[6642]: 2318352128 sent size: 11 option: 12 hostname  2024UCD2124
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option:  6 dns-server  8.8.8.8
+dnsmasq-dhcp[6642]: 2318352128 sent size:  4 option:  3 router  10.0.1.1

@@ -1,4 +1,4 @@
-pradumn@2024UCD2124:~$ cat /tmp/dnsmasq.conf
+runner@2024UCD2124:~/CN-Lab$ cat /tmp/dnsmasq.conf
 port=0
 interface=eth0
 bind-interfaces

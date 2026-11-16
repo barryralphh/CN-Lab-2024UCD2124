@@ -1,9 +1,9 @@
-pradumn@2024UCD2124:~$ ip netns exec pc1 ping -c 3 10.0.1.137
-PING 10.0.1.137 (10.0.1.137) 56(84) bytes of data.
-64 bytes from 10.0.1.137: icmp_seq=1 ttl=64 time=0.075 ms
-64 bytes from 10.0.1.137: icmp_seq=2 ttl=64 time=0.049 ms
-64 bytes from 10.0.1.137: icmp_seq=3 ttl=64 time=0.056 ms
+runner@2024UCD2124:~/CN-Lab$ ip netns exec pc1 ping -c 3 10.0.1.117
+PING 10.0.1.117 (10.0.1.117) 56(84) bytes of data.
+64 bytes from 10.0.1.117: icmp_seq=1 ttl=64 time=0.061 ms
+64 bytes from 10.0.1.117: icmp_seq=2 ttl=64 time=0.055 ms
+64 bytes from 10.0.1.117: icmp_seq=3 ttl=64 time=0.059 ms
 
---- 10.0.1.137 ping statistics ---
-3 packets transmitted, 3 received, 0% packet loss, time 2037ms
-rtt min/avg/max/mdev = 0.049/0.060/0.075/0.011 ms
+--- 10.0.1.117 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2063ms
+rtt min/avg/max/mdev = 0.055/0.058/0.061/0.002 ms
