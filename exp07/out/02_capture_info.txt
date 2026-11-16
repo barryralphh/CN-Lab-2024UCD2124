@@ -1,21 +1,21 @@
-pradumn@2024UCD2124:~$ capinfos exp07/out/lan_capture.pcap | head -20
+runner@2024UCD2124:~/CN-Lab$ capinfos exp07/out/lan_capture.pcap | head -20
 File name:           exp07/out/lan_capture.pcap
 File type:           Wireshark/tcpdump/... - pcap
 File encapsulation:  Ethernet
 File timestamp precision:  microseconds (6)
 Packet size limit:   file hdr: 262144 bytes
-Number of packets:   48
-File size:           5503 bytes
-Data size:           4711 bytes
-Capture duration:    5.600016 seconds
-Earliest packet time: 2026-11-16 15:52:30.696939
-Latest packet time:   2026-11-16 15:52:36.296955
-Data byte rate:      841 bytes/s
-Data bit rate:       6729 bits/s
-Average packet size: 98.15 bytes
+Number of packets:   43
+File size:           5018 bytes
+Data size:           4306 bytes
+Capture duration:    5.067828 seconds
+Earliest packet time: 2026-11-16 20:31:52.632238
+Latest packet time:   2026-11-16 20:31:57.700066
+Data byte rate:      849 bytes/s
+Data bit rate:       6797 bits/s
+Average packet size: 100.14 bytes
 Average packet rate: 8 packets/s
-SHA256:              339c8dd0682767224e3863a135ccf7704c9a3ab0d250a11c65c2ec45d822ed20
-SHA1:                2ee449ae290d45094ef5a4ff3510a00bcef48f89
+SHA256:              ea9e188fbda207731e873dd495411c312165ca05e4e6217ecc4f8f0a2e4da981
+SHA1:                56afae70ae778d63c3fd56fdb699da58a5cfe3f6
 Strict time order:   True
 Number of interfaces in file: 1
 Interface #0 info:

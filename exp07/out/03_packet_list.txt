@@ -1,2 +1,2 @@
-pradumn@2024UCD2124:~$ tshark -r exp07/out/lan_capture.pcap | head -40
+runner@2024UCD2124:~/CN-Lab$ tshark -r exp07/out/lan_capture.pcap | head -40
 tshark: You don't have permission to read the file "exp07/out/lan_capture.pcap".
