@@ -1,20 +1,20 @@
-pradumn@2024UCD2124:~$ ip netns exec pc2 dhclient -v -1 -pf /run/dhclient-pc2.pid -lf /var/lib/dhcp/dhclient-pc2.leases eth0
+runner@2024UCD2124:~/CN-Lab$ ip netns exec pc2 dhclient -v -1 -pf /run/dhclient-pc2.pid -lf /var/lib/dhcp/dhclient-pc2.leases eth0
 Internet Systems Consortium DHCP Client 4.4.3-P1
 Copyright 2004-2022 Internet Systems Consortium.
 All rights reserved.
 For info, please visit https://www.isc.org/software/dhcp/
 
-Listening on LPF/eth0/ea:f9:f9:cf:20:46
-Sending on   LPF/eth0/ea:f9:f9:cf:20:46
+Listening on LPF/eth0/e6:a4:fb:cb:7e:89
+Sending on   LPF/eth0/e6:a4:fb:cb:7e:89
 Sending on   Socket/fallback
 xid: warning: no netdev with useable HWADDR found for seed's uniqueness enforcement
-xid: rand init seed (0x6bf13240) built using gethostid
-DHCPREQUEST for 10.0.1.137 on eth0 to 255.255.255.255 port 67 (xid=0x68fad4bf)
-DHCPREQUEST for 10.0.1.137 on eth0 to 255.255.255.255 port 67 (xid=0x68fad4bf)
-DHCPREQUEST for 10.0.1.137 on eth0 to 255.255.255.255 port 67 (xid=0x68fad4bf)
-DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 3 (xid=0x333d0538)
-DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 8 (xid=0x333d0538)
-DHCPOFFER of 10.0.1.137 from 10.0.1.1
-DHCPREQUEST for 10.0.1.137 on eth0 to 255.255.255.255 port 67 (xid=0x38053d33)
-DHCPACK of 10.0.1.137 from 10.0.1.1 (xid=0x333d0538)
-bound to 10.0.1.137 -- renewal in 16964 seconds.
+xid: rand init seed (0x6afb68df) built using gethostid
+DHCPREQUEST for 10.0.1.117 on eth0 to 255.255.255.255 port 67 (xid=0x38b1e018)
+DHCPREQUEST for 10.0.1.117 on eth0 to 255.255.255.255 port 67 (xid=0x38b1e018)
+DHCPREQUEST for 10.0.1.117 on eth0 to 255.255.255.255 port 67 (xid=0x38b1e018)
+DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 3 (xid=0x6274df49)
+DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 4 (xid=0x6274df49)
+DHCPOFFER of 10.0.1.117 from 10.0.1.1
+DHCPREQUEST for 10.0.1.117 on eth0 to 255.255.255.255 port 67 (xid=0x49df7462)
+DHCPACK of 10.0.1.117 from 10.0.1.1 (xid=0x6274df49)
+bound to 10.0.1.117 -- renewal in 18813 seconds.
