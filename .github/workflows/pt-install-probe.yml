@@ -1,0 +1,38 @@
+name: pt-install-probe
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  pt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: playwright
+        run: |
+          pip install -q playwright
+          python -m playwright install --with-deps chromium >/dev/null 2>&1
+      - name: download packet tracer
+        env:
+          NETACAD_USER: ${{ secrets.NETACAD_USER }}
+          NETACAD_PASS: ${{ secrets.NETACAD_PASS }}
+        run: python3 tools/pt_download.py && mv /tmp/pt.deb ./pt.deb && ls -la pt.deb
+      - name: install + launch
+        run: |
+          sudo apt-get update -qq
+          bash tools/pt_install.sh
+          mkdir -p ptprobe
+          export DISPLAY=:99
+          Xvfb :99 -screen 0 1600x900x24 &
+          sleep 2
+          BIN=$(command -v packettracer || ls /opt/pt/bin/PacketTracer 2>/dev/null || true)
+          echo "BIN=$BIN"
+          (QT_QPA_PLATFORM=xcb nohup $BIN >/tmp/pt.out 2>&1 &)
+          for t in 15 35 60; do sleep $t; import -window root ptprobe/launch_$t.png; xdotool search --onlyvisible --name . getwindowname %@ 2>/dev/null | head -10 | tee -a ptprobe/windows.txt; done
+          tail -20 /tmp/pt.out | tee ptprobe/pt_stdout.txt
+      - name: save probe screenshots
+        run: |
+          rm -f pt.deb
+          git config user.name barryralphh; git config user.email pradumnyadav762@gmail.com
+          git add ptprobe; git commit -m "pt probe screenshots" || true; git pull --rebase -q; git push
