@@ -1,0 +1,17 @@
+pradumn@2024UCD2124:~$ ip netns exec pc1 dhclient -v -1 -pf /run/dhclient-pc1.pid -lf /var/lib/dhcp/dhclient-pc1.leases eth0
+Internet Systems Consortium DHCP Client 4.4.3-P1
+Copyright 2004-2022 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+
+Listening on LPF/eth0/d6:32:a9:13:21:56
+Sending on   LPF/eth0/d6:32:a9:13:21:56
+Sending on   Socket/fallback
+xid: warning: no netdev with useable HWADDR found for seed's uniqueness enforcement
+xid: rand init seed (0x6bf1339d) built using gethostid
+DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 3 (xid=0xce191833)
+DHCPOFFER of 10.0.1.131 from 10.0.1.1
+DHCPREQUEST for 10.0.1.131 on eth0 to 255.255.255.255 port 67 (xid=0x331819ce)
+DHCPACK of 10.0.1.131 from 10.0.1.1 (xid=0xce191833)
+Setting LLMNR support level "yes" for "2", but the global support level is "no".
+bound to 10.0.1.131 -- renewal in 16744 seconds.

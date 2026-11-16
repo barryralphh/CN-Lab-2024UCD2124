@@ -1,0 +1,31 @@
+pradumn@2024UCD2124:~$ grep -i dhcp exp04/out/dnsmasq.log | head -30
+dnsmasq[5269]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+dnsmasq-dhcp[5269]: DHCP, IP range 10.0.1.100 -- 10.0.1.150, lease time 12h
+dnsmasq-dhcp[5269]: DHCP, sockets bound exclusively to interface eth0
+dnsmasq-dhcp[5269]: 3457751091 available DHCP range: 10.0.1.100 -- 10.0.1.150
+dnsmasq-dhcp[5269]: 3457751091 client provides name: runnervmccnms
+dnsmasq-dhcp[5269]: 3457751091 DHCPDISCOVER(eth0) d6:32:a9:13:21:56 
+dnsmasq-dhcp[5269]: 3457751091 tags: eth0
+dnsmasq-dhcp[5269]: 3457751091 DHCPOFFER(eth0) 10.0.1.131 d6:32:a9:13:21:56 
+dnsmasq-dhcp[5269]: 3457751091 requested options: 1:netmask, 28:broadcast, 2:time-offset, 3:router, 
+dnsmasq-dhcp[5269]: 3457751091 requested options: 15:domain-name, 6:dns-server, 119:domain-search, 
+dnsmasq-dhcp[5269]: 3457751091 requested options: 12:hostname, 44:netbios-ns, 47:netbios-scope, 
+dnsmasq-dhcp[5269]: 3457751091 requested options: 26:mtu, 121:classless-static-route, 42:ntp-server
+dnsmasq-dhcp[5269]: 3457751091 next server: 10.0.1.1
+dnsmasq-dhcp[5269]: 3457751091 sent size:  1 option: 53 message-type  2
+dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option: 54 server-identifier  10.0.1.1
+dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option: 51 lease-time  12h
+dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option: 58 T1  6h
+dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option: 59 T2  10h30m
+dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option:  1 netmask  255.255.255.0
+dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option: 28 broadcast  10.0.1.255
+dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option:  6 dns-server  8.8.8.8
+dnsmasq-dhcp[5269]: 3457751091 sent size:  4 option:  3 router  10.0.1.1
+dnsmasq-dhcp[5269]: 3457751091 available DHCP range: 10.0.1.100 -- 10.0.1.150
+dnsmasq-dhcp[5269]: 3457751091 client provides name: runnervmccnms
+dnsmasq-dhcp[5269]: 3457751091 DHCPREQUEST(eth0) 10.0.1.131 d6:32:a9:13:21:56 
+dnsmasq-dhcp[5269]: 3457751091 tags: eth0
+dnsmasq-dhcp[5269]: 3457751091 DHCPACK(eth0) 10.0.1.131 d6:32:a9:13:21:56 runnervmccnms
+dnsmasq-dhcp[5269]: 3457751091 requested options: 1:netmask, 28:broadcast, 2:time-offset, 3:router, 
+dnsmasq-dhcp[5269]: 3457751091 requested options: 15:domain-name, 6:dns-server, 119:domain-search, 
+dnsmasq-dhcp[5269]: 3457751091 requested options: 12:hostname, 44:netbios-ns, 47:netbios-scope, 

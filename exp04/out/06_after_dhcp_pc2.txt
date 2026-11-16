@@ -1,0 +1,9 @@
+pradumn@2024UCD2124:~$ ip netns exec pc2 ip addr show eth0; sudo ip netns exec pc2 ip route
+2: eth0@if5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 52:7d:2a:d0:76:da brd ff:ff:ff:ff:ff:ff link-netns sw
+    inet 10.0.1.137/24 brd 10.0.1.255 scope global dynamic eth0
+       valid_lft 43200sec preferred_lft 43200sec
+    inet6 fe80::507d:2aff:fed0:76da/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+default via 10.0.1.1 dev eth0 
+10.0.1.0/24 dev eth0 proto kernel scope link src 10.0.1.137 
