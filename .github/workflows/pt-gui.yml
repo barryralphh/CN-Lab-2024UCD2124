@@ -37,7 +37,11 @@ jobs:
         run: |
           Xvfb :99 -screen 0 1600x900x24 &
           sleep 2
-          (QT_QPA_PLATFORM=xcb nohup packettracer >/tmp/pt.out 2>&1 &)
+          mkdir -p $HOME/shim
+          printf '#!/bin/bash\necho "$@" >> /tmp/auth_url.txt\n' > $HOME/shim/xdg-open
+          chmod +x $HOME/shim/xdg-open
+          for n in google-chrome google-chrome-stable chromium firefox sensible-browser x-www-browser gio; do cp $HOME/shim/xdg-open $HOME/shim/$n; done
+          (PATH=$HOME/shim:$PATH BROWSER=$HOME/shim/xdg-open QT_QPA_PLATFORM=xcb nohup packettracer >/tmp/pt.out 2>&1 &)
           python3 tools/${{ github.event.inputs.script }}
         continue-on-error: true
       - name: save outputs
