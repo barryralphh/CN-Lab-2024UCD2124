@@ -5,9 +5,15 @@ def sh(c,**k): return subprocess.run(c,shell=True,capture_output=True,text=True,
 def shot(name):
     p=f"{OUT}/{name}.png"; sh(f"import -window root {p}"); return p
 def ocr(p):
-    r=sh(f"tesseract {p} - --psm 11 tsv 2>/dev/null")
+    sh(f"convert {p} -resize 200% -colorspace Gray /tmp/o2.png")
+    r=sh("tesseract /tmp/o2.png - --psm 11 tsv 2>/dev/null")
     rows=list(csv.DictReader(io.StringIO(r.stdout),delimiter="\t",quoting=csv.QUOTE_NONE))
-    return [x for x in rows if x.get("text","").strip()]
+    out=[]
+    for x in rows:
+        if not x.get("text","").strip(): continue
+        for k in ("left","top","width","height"): x[k]=str(int(x[k])//2)
+        out.append(x)
+    return out
 def text_of(p): return " ".join(x["text"] for x in ocr(p))
 def dump(name):
     p=shot(name); t=text_of(p); open(f"{OUT}/{name}.txt","w").write(t); print(f"[{name}]",t[:700],flush=True); return p
