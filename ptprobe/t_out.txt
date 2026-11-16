@@ -1,0 +1,99 @@
+|File
+
+Edit
+
+Options
+
+View Tools
+
+Extensions
+
+Window Help
+
+Cd
+
+-
+
+A
+
+OA @er4
+
+® @®Onrmfr BSr
+
+eo ee
+
+Info
+
+General
+
+Script Engine
+
+Custom Interfaces
+
+Data Store
+
+rc
+
+Qa
+
+or
+
+al
+
+function mk(label,x,y){ try{ var lw=ipc.appWindow().getActiveWorkspace().getLogicalWorkspace(); var n=lw.addDevice(8,'PC-PT',x,y); ipc.network().getDevice(n).setName(label); }cat
+
+Physic
+
+mk('START’,150,150);
+
++” | 4a ||
+
+var fm=null;
+
+try{ fm=ipc.systemFileManager(); }catch(e){}
+
+mk(fm?'SFMyes':'SFMno’,150,250);
+
+var ok=false;
+
+try{ if(fm){ fm.writeTextToFile("/tmp/t.txt',"hi'); ok=true; } }catch(e){ mk(‘WERR',150,350); }
+
+mk(ok?"WROTE':'NOWRITE',150,450);
+
+Tir
+
+II
+
+Itime
+
+imulation
+
+Rms a
+
++
+
+Rename
+
+Import
+
+Import Dir
+
+Export
+
+Start
+
+Debug
+
+Q Search for device
+
+4
+
+Tk
+
+DI
+
+find
+
+a#whm ye
+
+(Select a Device to Drag and Drop to the Workspace)
