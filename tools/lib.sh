@@ -10,8 +10,8 @@ clean(){
 }
 init(){ EXP=$1; OUT=$EXP/out; mkdir -p "$OUT"; N=0; clean; }
 cap(){
-  N=$((N+1)); local f="$OUT/$(printf %02d $N)_$1.txt"
-  { echo "$PROMPT ${2#sudo }"; timeout 60 bash -c "$2" 2>&1 | head -55; } > "$f"
+  N=$((N+1))
+  xrun "$OUT/$(printf %02d $N)_$1" "$2"
 }
 mksw(){ sudo ip netns add $1; sudo ip -n $1 link add br0 type bridge; sudo ip -n $1 link set br0 up; sudo ip -n $1 link set lo up; }
 mknode(){ sudo ip netns add $1; sudo ip -n $1 link set lo up; sudo mkdir -p /etc/netns/$1; sudo touch /etc/netns/$1/resolv.conf; }
@@ -48,3 +48,4 @@ EOF
   sudo ip netns exec $1 dnsmasq -k -C /tmp/dnsmasq.conf > "$OUT/dnsmasq.log" 2>&1 &
   sleep 2
 }
+source "$(dirname "${BASH_SOURCE[0]}")/xlib.sh"
