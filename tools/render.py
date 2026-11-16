@@ -4,7 +4,7 @@ FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
 def render(txt, png):
     f = ImageFont.truetype(FONT, 16)
     lines = open(txt, errors="replace").read().rstrip("\n").split("\n")
-    lines = [l.replace("\t", "    ")[:130] for l in lines][:45]
+    lines = [l.replace("\t", "    ")[:130] for l in lines][:60]
     w = max(700, max(len(l) for l in lines) * 10 + 30)
     h = len(lines) * 22 + 60
     im = Image.new("RGB", (w, h), (24, 24, 24))
