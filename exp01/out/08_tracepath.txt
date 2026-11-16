@@ -1,0 +1,12 @@
+pradumn@2024UCD2124:~$ tracepath -m 8 8.8.8.8
+ 1?: [LOCALHOST]                      pmtu 1500
+ 1:  no reply
+ 2:  no reply
+ 3:  no reply
+ 4:  no reply
+ 5:  no reply
+ 6:  no reply
+ 7:  no reply
+ 8:  no reply
+     Too many hops: pmtu 1500
+     Resume: pmtu 1500 

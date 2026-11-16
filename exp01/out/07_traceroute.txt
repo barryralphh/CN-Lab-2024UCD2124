@@ -1,0 +1,10 @@
+pradumn@2024UCD2124:~$ traceroute -m 8 8.8.8.8
+traceroute to 8.8.8.8 (8.8.8.8), 8 hops max, 60 byte packets
+ 1  * * *
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  * * *
+ 8  * * *

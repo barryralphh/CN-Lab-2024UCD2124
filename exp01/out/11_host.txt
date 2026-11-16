@@ -1,0 +1,13 @@
+pradumn@2024UCD2124:~$ host google.com
+google.com has address 142.251.16.102
+google.com has address 142.251.16.138
+google.com has address 142.251.16.100
+google.com has address 142.251.16.139
+google.com has address 142.251.16.113
+google.com has address 142.251.16.101
+google.com has IPv6 address 2607:f8b0:4004:c2d::64
+google.com has IPv6 address 2607:f8b0:4004:c2d::65
+google.com has IPv6 address 2607:f8b0:4004:c2d::8b
+google.com has IPv6 address 2607:f8b0:4004:c2d::8a
+google.com mail is handled by 10 smtp.google.com.
+google.com has HTTP service bindings 1 . alpn="h2,h3"

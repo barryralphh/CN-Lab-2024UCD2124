@@ -1,0 +1,26 @@
+pradumn@2024UCD2124:~$ nslookup google.com
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 142.251.16.113
+Name:	google.com
+Address: 142.251.16.138
+Name:	google.com
+Address: 142.251.16.139
+Name:	google.com
+Address: 142.251.16.101
+Name:	google.com
+Address: 142.251.16.102
+Name:	google.com
+Address: 142.251.16.100
+Name:	google.com
+Address: 2607:f8b0:4004:c2d::64
+Name:	google.com
+Address: 2607:f8b0:4004:c2d::8b
+Name:	google.com
+Address: 2607:f8b0:4004:c2d::65
+Name:	google.com
+Address: 2607:f8b0:4004:c2d::8a
+

@@ -1,0 +1,2 @@
+pradumn@2024UCD2124:~$ arp -a
+_gateway (10.1.0.1) at 12:34:56:78:9a:bc [ether] on eth0

@@ -1,0 +1,2 @@
+pradumn@2024UCD2124:~$ ip neigh
+10.1.0.1 dev eth0 lladdr 12:34:56:78:9a:bc REACHABLE 
