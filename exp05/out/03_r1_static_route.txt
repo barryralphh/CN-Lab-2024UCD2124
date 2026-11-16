@@ -1,0 +1,5 @@
+pradumn@2024UCD2124:~$ ip netns exec r1 ip route add 10.3.3.0/24 via 10.12.0.2 && sudo ip netns exec r1 ip route
+10.1.1.0/24 dev eth0 proto kernel scope link src 10.1.1.1 
+10.3.3.0/24 via 10.12.0.2 dev eth1 
+10.12.0.0/30 dev eth1 proto kernel scope link src 10.12.0.1 
+10.13.0.0/30 dev eth2 proto kernel scope link src 10.13.0.1 

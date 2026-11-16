@@ -1,0 +1,5 @@
+pradumn@2024UCD2124:~$ ip netns exec pc1 traceroute -n -I 10.3.3.10
+traceroute to 10.3.3.10 (10.3.3.10), 30 hops max, 60 byte packets
+ 1  10.1.1.1  0.034 ms * *
+ 2  10.13.0.2  0.055 ms  0.009 ms  0.008 ms
+ 3  10.3.3.10  0.013 ms  0.010 ms  0.009 ms

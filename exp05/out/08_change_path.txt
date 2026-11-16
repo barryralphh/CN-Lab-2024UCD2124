@@ -1,0 +1,3 @@
+pradumn@2024UCD2124:~$ ip netns exec r1 ip route replace 10.3.3.0/24 via 10.13.0.2 && sudo ip netns exec r3 ip route replace 10.1.1.0/24 via 10.13.0.1 && sudo ip netns exec r1 ip route get 10.3.3.10
+10.3.3.10 via 10.13.0.2 dev eth2 src 10.13.0.1 uid 0 
+    cache 

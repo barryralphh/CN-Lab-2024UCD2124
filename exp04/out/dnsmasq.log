@@ -99,3 +99,4 @@ dnsmasq-dhcp[5269]: 46420860 sent size:  4 option: 28 broadcast  10.0.1.255
 dnsmasq-dhcp[5269]: 46420860 sent size: 13 option: 12 hostname  runnervmccnms
 dnsmasq-dhcp[5269]: 46420860 sent size:  4 option:  6 dns-server  8.8.8.8
 dnsmasq-dhcp[5269]: 46420860 sent size:  4 option:  3 router  10.0.1.1
+dnsmasq[5269]: exiting on receipt of SIGTERM
