@@ -1,0 +1,2 @@
+pradumn@2024UCD2124:~$ cat exp06/out/http.log
+203.0.113.2 - - [16/Nov/2026 15:52:28] "GET / HTTP/1.1" 200 -

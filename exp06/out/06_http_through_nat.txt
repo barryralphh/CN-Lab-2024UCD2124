@@ -1,0 +1,2 @@
+pradumn@2024UCD2124:~$ ip netns exec pc1 curl -s -o /dev/null -w 'HTTP status: %{http_code}\n' http://203.0.113.10/
+HTTP status: 200
