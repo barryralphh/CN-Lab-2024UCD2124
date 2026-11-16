@@ -1,2 +1,2 @@
-pradumn@2024UCD2124:~$ tshark -r exp08/out/arp.pcap -Y 'arp.opcode==1' -V -c 1 | head -45
+runner@2024UCD2124:~/CN-Lab$ tshark -r exp08/out/arp.pcap -Y 'arp.opcode==1' -V -c 1 | head -45
 tshark: You don't have permission to read the file "exp08/out/arp.pcap".

@@ -1,2 +1,2 @@
-pradumn@2024UCD2124:~$ ip netns exec pc1 ip neigh show
-192.168.10.12 dev eth0 lladdr 12:cd:90:1c:ca:3a REACHABLE 
+runner@2024UCD2124:~/CN-Lab$ ip netns exec pc1 ip neigh show
+192.168.10.12 dev eth0 lladdr 66:c9:e5:21:31:39 REACHABLE 
