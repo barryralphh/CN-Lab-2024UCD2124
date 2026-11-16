@@ -1,0 +1,12 @@
+pradumn@2024UCD2124:~$ tshark -D
+libibverbs: Warning: couldn't open config directory '/etc/libibverbs.d'.
+1. eth0
+2. enP51850s1
+3. any
+4. lo (Loopback)
+5. docker0
+6. bluetooth-monitor
+7. nflog
+8. nfqueue
+9. dbus-system
+10. dbus-session

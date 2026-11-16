@@ -1,0 +1,2 @@
+pradumn@2024UCD2124:~$ tshark -r exp07/out/lan_capture.pcap -Y icmp
+tshark: You don't have permission to read the file "exp07/out/lan_capture.pcap".
