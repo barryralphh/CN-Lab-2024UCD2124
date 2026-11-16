@@ -1,0 +1,44 @@
+name: labs-02-10
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  labs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - name: install tools
+        run: |
+          echo "wireshark-common wireshark-common/install-setuid boolean false" | sudo debconf-set-selections
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq net-tools dnsutils traceroute nmap iputils-tracepath python3-pil dnsmasq isc-dhcp-client conntrack tcpdump tshark wireshark xvfb imagemagick xdotool iptables
+          sudo systemctl stop dnsmasq || true
+      - name: exp02
+        run: bash tools/runexp.sh 02
+        continue-on-error: true
+      - name: exp03
+        run: bash tools/runexp.sh 03
+        continue-on-error: true
+      - name: exp04
+        run: bash tools/runexp.sh 04
+        continue-on-error: true
+      - name: exp05
+        run: bash tools/runexp.sh 05
+        continue-on-error: true
+      - name: exp06
+        run: bash tools/runexp.sh 06
+        continue-on-error: true
+      - name: exp07
+        run: bash tools/runexp.sh 07
+        continue-on-error: true
+      - name: exp08
+        run: bash tools/runexp.sh 08
+        continue-on-error: true
+      - name: exp09
+        run: bash tools/runexp.sh 09
+        continue-on-error: true
+      - name: exp10
+        run: bash tools/runexp.sh 10
+        continue-on-error: true
