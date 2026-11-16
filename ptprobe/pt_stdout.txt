@@ -1,0 +1,3 @@
+No such schema “org.gnome.desktop.interface”
+Cisco_Packet_Tracer_9.0.1:1221181b5089fa2bae075f01a99d67b3:/opt/pt/packettracer.AppImage
+./PacketTracer: error while loading shared libraries: libOpenGL.so.0: cannot open shared object file: No such file or directory
