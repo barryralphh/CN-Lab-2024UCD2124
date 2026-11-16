@@ -1,2 +1,2 @@
-pradumn@2024UCD2124:~$ tshark -r exp09/out/icmp.pcap -Y icmp -T fields -e frame.number -e ip.src -e ip.dst -e icmp.type -e icmp.code -E header=y
+runner@2024UCD2124:~/CN-Lab$ tshark -r exp09/out/icmp.pcap -Y icmp -T fields -e frame.number -e ip.src -e ip.dst -e icmp.type -e icmp.code -E header=y
 tshark: You don't have permission to read the file "exp09/out/icmp.pcap".
