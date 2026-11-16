@@ -1,0 +1,48 @@
+name: pt-gui
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: script in tools/ to run (e.g. pt_step1.py)
+        default: pt_step1.py
+permissions:
+  contents: write
+jobs:
+  pt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: playwright
+        run: |
+          pip install -q playwright
+          python -m playwright install --with-deps chromium >/dev/null 2>&1
+      - name: download packet tracer
+        env:
+          NETACAD_USER: ${{ secrets.NETACAD_USER }}
+          NETACAD_PASS: ${{ secrets.NETACAD_PASS }}
+        run: python3 tools/pt_download.py && mv /tmp/pt.deb ./pt.deb
+      - name: install deps and PT
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq tesseract-ocr >/dev/null 2>&1
+          bash tools/pt_install.sh
+          rm -f pt.deb
+      - name: run gui script
+        env:
+          DISPLAY: ":99"
+          LIBGL_ALWAYS_SOFTWARE: "1"
+          NETACAD_USER: ${{ secrets.NETACAD_USER }}
+          NETACAD_PASS: ${{ secrets.NETACAD_PASS }}
+        run: |
+          Xvfb :99 -screen 0 1600x900x24 &
+          sleep 2
+          (QT_QPA_PLATFORM=xcb nohup packettracer >/tmp/pt.out 2>&1 &)
+          python3 tools/${{ github.event.inputs.script }}
+        continue-on-error: true
+      - name: save outputs
+        run: |
+          git config user.name barryralphh; git config user.email pradumnyadav762@gmail.com
+          git add ptprobe pt_out 2>/dev/null || true
+          git commit -m "pt gui outputs" || true
+          git pull --rebase -q; git push
