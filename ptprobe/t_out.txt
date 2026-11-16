@@ -1,6 +1,13 @@
-|WINS:2097190 Cisco Packet Tracer Window 2097190 Position: 0,0 (screen: 0) Geometry: 1600x900
-2097226 Scripting - File Script Module (Stopped) Window 2097226 Position: 169,39 (screen: 0) Geometry: 1262x822
-|File
+after import: Scripting - File Script Module (Running)
+BTNS [('Import', 493, 826), ('Import', 646, 826), ('Dir', 686, 826), ('Export', 819, 826), ('Run', 987, 826), ('File', 1011, 826), ('Stop', 1158, 826), ('Debug', 1315, 826)]
+click0: Scripting - File Script Module (Stopped)
+BTNS [('Import', 493), ('Import', 646), ('Dir', 686), ('Export', 819), ('Start', 1157), ('Debug', 1315)]
+click1: Scripting - File Script Module (Running)
+BTNS [('Import', 493), ('Import', 646), ('Dir', 686), ('Export', 819), ('Run', 987), ('File', 1011), ('Stop', 1158), ('Debug', 1315)]
+click2: Scripting - File Script Module (Stopped)
+BTNS [('Import', 493), ('Import', 646), ('Dir', 686), ('Export', 819), ('Start', 1157), ('Debug', 1315)]
+T_TXT:
+File
 
 Edit
 
@@ -28,13 +35,11 @@ ca
 
 Root <>) 4
 
-00:51
-
-Time: 00:01:4
-
-©)(»>
+01:01
 
 ‘$2. Simulation
+
+Time: 00:02:0. 6) »
 
 —~
 
@@ -51,8 +56,6 @@ g
 L
 
 1 Se Se Ss Fs
-
-we OW
 
 PTB8200
 
@@ -76,13 +79,17 @@ IR8340
 
 IRI
 
-i
+Dymsnen
 
 oO Scenario 6 . Fire Last Status Source Destination Type Color Time(sec) Periodic Num Edit Delete
 
 Q|se
 
-ord
+ford
+
+@ cD
+
+=
 
 4
 
