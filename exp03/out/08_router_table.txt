@@ -1,3 +1,3 @@
-pradumn@2024UCD2124:~$ ip netns exec r ip route
+runner@2024UCD2124:~/CN-Lab$ ip netns exec r ip route
 10.0.1.0/24 dev eth0 proto kernel scope link src 10.0.1.1 
 10.0.2.0/24 dev eth1 proto kernel scope link src 10.0.2.1 

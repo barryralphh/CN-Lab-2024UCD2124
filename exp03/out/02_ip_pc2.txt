@@ -1,5 +1,5 @@
-pradumn@2024UCD2124:~$ ip netns exec pc2 ip -br addr; sudo ip netns exec pc2 ip route
+runner@2024UCD2124:~/CN-Lab$ ip netns exec pc2 ip -br addr; sudo ip netns exec pc2 ip route
 lo               UNKNOWN        127.0.0.1/8 ::1/128 
-eth0@if3         UP             10.0.2.2/24 fe80::fcd7:f5ff:fe34:eed5/64 
+eth0@if3         UP             10.0.2.2/24 fe80::980d:3bff:fe1c:3b18/64 
 default via 10.0.2.1 dev eth0 
 10.0.2.0/24 dev eth0 proto kernel scope link src 10.0.2.2 

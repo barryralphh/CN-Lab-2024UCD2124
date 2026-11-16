@@ -1,5 +1,5 @@
-pradumn@2024UCD2124:~$ ip netns exec r ip -br addr; sudo ip netns exec r sysctl net.ipv4.ip_forward
+runner@2024UCD2124:~/CN-Lab$ ip netns exec r ip -br addr; sudo ip netns exec r sysctl net.ipv4.ip_forward
 lo               UNKNOWN        127.0.0.1/8 ::1/128 
-eth0@if4         UP             10.0.1.1/24 fe80::30c5:cbff:fecc:88db/64 
-eth1@if4         UP             10.0.2.1/24 fe80::e495:83ff:fe1b:8975/64 
+eth0@if4         UP             10.0.1.1/24 fe80::1873:14ff:fe90:412/64 
+eth1@if4         UP             10.0.2.1/24 fe80::b890:53ff:fe6a:63cb/64 
 net.ipv4.ip_forward = 0

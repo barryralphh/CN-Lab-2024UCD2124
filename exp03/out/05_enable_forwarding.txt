@@ -1,2 +1,2 @@
-pradumn@2024UCD2124:~$ ip netns exec r sysctl -w net.ipv4.ip_forward=1
+runner@2024UCD2124:~/CN-Lab$ ip netns exec r sysctl -w net.ipv4.ip_forward=1
 net.ipv4.ip_forward = 1
