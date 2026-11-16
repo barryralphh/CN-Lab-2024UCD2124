@@ -43,6 +43,6 @@ jobs:
       - name: save outputs
         run: |
           git config user.name barryralphh; git config user.email pradumnyadav762@gmail.com
-          git add ptprobe pt_out 2>/dev/null || true
+          mkdir -p ptprobe pt_out; git add -A ptprobe pt_out || true
           git commit -m "pt gui outputs" || true
           git pull --rebase -q; git push
