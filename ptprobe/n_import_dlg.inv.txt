@@ -1,0 +1,27 @@
+File Edit Options View Tools Extensions Window Help
+bmmeWeOrra AAC 1HA OME BSH ?
+Info General Script Engine Custom Interfaces Data Store
+er" ee
+Blaes &
+(*, Logical)(— Physic (2 es 00:41:00 )
+Look in: {=a /tmp/.mount_packet4ysDiy/opt/pt/bin ~¥|\0 090 @ (=)
+e Computer Name ¥ Size Type Date Modified
+Pa SS audio Folder 16 Jul ...9:12:26
+fe srunner .
+SS imageformats Folder 16 Jul ...9:12:26
+SS Linux Folder 16 Jul ...9:12:26
+SS mediaservice Folder 16 Jul ...9:12:28
+SS platforms Folder 16 Jul ...9:12:28
+SS qtwebengine _locales Folder 16 Jul ...9:12:28
+SS sqidrivers Folder 16 Jul ...9:12:28
+SS tis Folder 16 Jul ...9:12:28
+SS translations Folder 16 Jul ...9:12:28
+SS xcbglintegrations Folder 16 Jul ...9:12:28
+Files of type: | Script Files (*.js) v x Cancel
+4 >
+Time: 00:01:23| (. 3
+: (©) Itime )(,f, Simulation }
+, + Import Import Dir Run File Stop Debug
+Q Search for device
+4 | (ty + q> < » Toggle PDU List Window
+(Select a Device to Drag and Drop to the Workspace)

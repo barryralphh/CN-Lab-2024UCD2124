@@ -1,0 +1,18 @@
+File Edit Options View Tools Extensions Window Help
+bmmeWeOrra AAC 1HA OME BSH ?
+Info General Script Engine Custom Interfaces Data Store
+er" —
+Se
+fs =p) ; var out=[]; \4aa’ =... ~\
+(". Logical )(—| Physic try t) JSP (aa. Gr 00:45:30 )
+var lw=ipc.appWindow().getActiveWorkspace().getLogicalWorkspace(); «
+var n=lw.addDevice(8,'PC-PT',200,200);
+out.push('added '+n);
+}catch(e){ out.push('ERR '+e); }
+try{ ipc.systemFileManager().writeTextToFile('/tmp/t.txt', out.join("\n')); }catch(e){}
+4 >
+Time: 00:01:32( (*) }( DP ) bitime )(,, Simulation |
+- + - Rename Import Import Dir Export Run File Stop Debug
+Q Search for device
+Sf | (ay + c> 4 > Toggle PDU List Window
+(Select a Device to Drag and Drop to the Workspace)
