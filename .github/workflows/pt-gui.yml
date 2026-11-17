@@ -49,4 +49,4 @@ jobs:
           git config user.name barryralphh; git config user.email pradumnyadav762@gmail.com
           mkdir -p ptprobe pt_out; git add -A ptprobe pt_out || true
           git commit -m "pt gui outputs" || true
-          git pull --rebase -q; git push
+          for i in 1 2 3 4 5 6; do git pull --rebase -q && git push && break; sleep $((RANDOM%12+3)); done
