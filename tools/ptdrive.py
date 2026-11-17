@@ -30,3 +30,16 @@ def dark(x1,y1,x2,y2,n=60):
         if im.getpixel((x,y))<200: c+=1
     return c/(n+1)
 def strip_all(name,minconf=10): return words(name,minconf,(190,770,760,860))
+
+def dark(x1,y1,x2,y2,n=0):
+    p=shot("dark_tmp"); x=min(x1,x2); w=abs(x2-x1)+3; y=min(y1,y2); h=abs(y2-y1)+3
+    r=sh(f"convert {p} -colorspace Gray -crop {w}x{h}+{x-1}+{y-1} +repage -format %[fx:mean] info:")
+    try: return float(r.stdout.strip())
+    except: return -1
+def place(kind,X,Y):
+    # kind: router1941, switch2960, pc, laptop, server
+    if kind=="router1941": click(18,795,2); drag(425,812,X,Y)
+    elif kind=="switch2960": click(154,795,2); drag(424,812,X,Y)
+    elif kind=="pc": click(52,795,2); drag(255,795,X,Y)
+    elif kind=="laptop": click(52,795,2); drag(295,795,X,Y)
+    elif kind=="server": click(52,795,2); drag(335,795,X,Y)
