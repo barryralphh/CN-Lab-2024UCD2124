@@ -1,0 +1,15 @@
+C cat 120: J s y, oO > ; (Select a Device to Drag and Drop to the Workspace) :
+C cat 120 sub 18: J s y, oO > ; (Select a Device to Drag and Drop to the Workspace) :
+C cat 120 sub 52: J s y, oO > ; (Select a Device to Drag and Drop to the Workspace) :
+C cat 120 sub 86: J s y, oO > @ Pease ; (Select a Device to Drag and Drop to the Workspace) :
+C cat 120 sub 120: J s A y, oO > ; (Select a Device to Drag and Drop to the Workspace) :
+C cat 154: 1841 262104 2811 2811 2960 PTB8200 =) oO > 4 > Toggle (Select a Device to Drag and Drop to the Workspace)
+C cat 154 sub 18: 1841 262104 2811 2811 2960 PTB8200 =) oO > ; (Select a Device to Drag and Drop to the Workspace) :
+C cat 154 sub 52: 1841 262104 2811 2811 2960 PTB8200 =) oO > 4 > Toggle (Select a Device to Drag and Drop to the Workspace)
+C cat 154 sub 86: 1841 262104 2811 2811 2960 PTB8200 =) oO > 4 > Toggle (Select a Device to Drag and Drop to the Workspace)
+C cat 154 sub 120: 1841 262104 2811 2811 2960 PTB8200 =) oO > 4 > Toggle (Select a Device to Drag and Drop to the Workspace)
+C cat 188: wd oO > ; (Select a Device to Drag and Drop to the Workspace) :
+C cat 188 sub 18: wd oO > ; (Select a Device to Drag and Drop to the Workspace) :
+C cat 188 sub 52: S&S oO > ; (Select a Device to Drag and Drop to the Workspace) :
+C cat 188 sub 86: oO > ; (Select a Device to Drag and Drop to the Workspace) :
+C cat 188 sub 120: oO > ; (Select a Device to Drag and Drop to the Workspace) :
