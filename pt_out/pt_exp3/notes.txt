@@ -3,3 +3,7 @@ still open after Escape: [('2097314', 'Router0')]
 e3_pc0: Interface FastEthernetO IP Configuration DHCP @) Static IPv4 Address 192.168.1.2 Subnet Mask 255.255.255.0 192.168.1.1 Default Gateway DNS Server IPv6 Configuration Automatic @) Static IPv6 Address Li
 e3_pc1: 4 —, >) #1941 RouterO sa PC-PT Pcl
 e3_pc0 cmd: 4 —, >) #1941 RouterO sa PC-PT Pcl
+e3_r cli: inter area * - candidate default, U - per-user static route, o - ODR P - periodic downloaded static route is not set Gateway of last resort 192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks 192.168.1.0/24 is directly connected, GigabitEtherneto/o 192.168.1.1/32 is directly connected, GigabitEtherneto/o 192.168.2.0/24 is variably subnetted, 2 subnets, 2 masks 192.168.2.0/24 is directly connected, GigabitEtherneto/1 192.168.2.1/32 is directly connected, GigabitEtherneto/1 Router# Copy Paste
+e3_pc0 ip: Interface FastEthernetO IP Configuration DHCP @) Static IPv4 Address 192.168.1.2 Subnet Mask 255.255.255.0 192.168.1.1 Default Gateway DNS Server 0.0.0.0 IPv6 C
+e3_pc1 ip: Interface FastEthernetO IP Configuration DHCP @) Static IPv4 Address 192.168.2.2 Subnet Mask 255.255.255.0 192.168.2.1 Default Gateway DNS Server 0.0.0.0 IPv6 C
+e3_pc0: could NOT reach Desktop home
