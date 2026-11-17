@@ -1,0 +1,5 @@
+E cand 215: WS =: y
+E cand 255: WS PC-PT. PCO
+E cand 295: WS ¥ |__| Laptop-PT LaptopO PC-PT PCO
+E cand 335: WS |__| Laptop-PT LaptopO PC-PT. Server-PT PCO ServerO
+E cand 375: WS = Laptop-PT LaptopO Meraki-Server Meraki sas PC-PT PCO Server-PT ServerO
