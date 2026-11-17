@@ -1,0 +1,8 @@
+O ws: PC-PT. PC-PT. PCO Pcl PC-PT.
+O1 open A: [('2097246', 'PC0')]
+O2 open B w/o closing A: [('2097246', 'PC0'), ('2097263', 'PC1')]
+O3 open C: [('2097246', 'PC0'), ('2097263', 'PC1'), ('2097280', 'PC2')]
+O4 after Escape all: [('2097246', 'PC0'), ('2097263', 'PC1'), ('2097280', 'PC2')]
+O5 reopen A: [('2097263', 'PC1'), ('2097280', 'PC2'), ('2097246', 'PC0')]
+O6 B after windowfocus main: [('2097280', 'PC2'), ('2097246', 'PC0'), ('2097263', 'PC1')]
+O7 C after menu click+Esc: [('2097246', 'PC0'), ('2097263', 'PC1'), ('2097280', 'PC2')]
