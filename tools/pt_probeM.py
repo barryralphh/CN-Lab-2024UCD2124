@@ -5,8 +5,7 @@ start()
 place("pc",450,520); place("pc",950,520)
 dclick(450,520,4); note("M1 open pc0: "+str(devwins()))
 click(604,129,2)
-ids=[i for i,n in devwins()]
-for i in ids: sh(f"xdotool key --window {i} Escape")
+for i,n in devwins(): sh(f"xdotool key --window {i} Escape")
 time.sleep(1.5); note("M2 after Escape: "+str(devwins()))
 dclick(950,520,4); note("M3 dclick pc1: "+str(devwins()))
 if not devwins():
