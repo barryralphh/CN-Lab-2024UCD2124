@@ -1,0 +1,5 @@
+e3_router cli: he initial configuration dialog? [yes/no] no shutdown % Please answer ‘yes’ or ‘no’. Would you like to enter the initial configuration dialog? [yes/no] end % Please answer ‘yes’ or ‘no’. Would you like to enter the initial configuration dialog? [yes/no] show ip interface brief % Please answer ‘yes’ or ‘no’. Would you like to enter the initial configuration dialog? [yes/no] show ip route ‘no’. % Please answer ‘yes’ or Would you like to enter the initial configuration dialog? [yes/no] | Copy Paste
+still open after Escape: [('2097314', 'Router0')]
+e3_pc0: Interface FastEthernetO IP Configuration DHCP @) Static IPv4 Address 192.168.1.2 Subnet Mask 255.255.255.0 192.168.1.1 Default Gateway DNS Server IPv6 Configuration Automatic @) Static IPv6 Address Li
+e3_pc1: 4 —, >) #1941 RouterO sa PC-PT Pcl
+e3_pc0 cmd: 4 —, >) #1941 RouterO sa PC-PT Pcl
