@@ -6,3 +6,8 @@ wins now: []
 e2_pc2: 62: SwifchO sas sas PC-PT PC-PT Pcl
 wins now: []
 e2_pc0 cmd: 62: SwifchO sas sas PC-PT PC-PT Pcl
+e2_pc0 ip: Interface FastEthernetO IP Configuration DHCP @) Static IPv4 Address 192.168.1.2 Subnet Mask 255.255.255.0 0.0.0.0 Default Gateway DNS Server 0.0.0.0 IPv6 Confi
+e2_pc1 ip: Interface FastEthernetO IP Configuration DHCP @) Static IPv4 Address 192.168.1.3 Subnet Mask 255.255.255.0 0.0.0.0 Default Gateway DNS Server 0.0.0.0 IPv6 Confi
+e2_pc2 ip: Interface FastEthernetO IP Configuration DHCP @) Static IPv4 Address 192.168.1.4 Subnet Mask 255.255.255.0 0.0.0.0 Default Gateway DNS Server 0.0.0.0 IPv6 Confi
+e2_pc0: could NOT reach Desktop home
+e2_pc1: could NOT reach Desktop home
