@@ -43,3 +43,37 @@ def place(kind,X,Y):
     elif kind=="pc": click(52,795,2); drag(255,795,X,Y)
     elif kind=="laptop": click(52,795,2); drag(295,795,X,Y)
     elif kind=="server": click(52,795,2); drag(335,795,X,Y)
+
+def wins():
+    out=sh("for w in $(xdotool search --onlyvisible --name .); do echo $w:$(xdotool getwindowname $w); done").stdout.strip().splitlines()
+    return [tuple(l.split(":",1)) for l in out]
+def devwins(): return [w for w in wins() if w[1] not in ("Cisco Packet Tracer",) and not w[1].startswith("Scripting")]
+def cable(a,b):
+    click(120,795,1); click(255,795,1); click(a[0],a[1],1.5); click(b[0],b[1],2.5)
+def close_all():
+    for i,n in devwins():
+        sh(f"xdotool key --window {i} Escape"); time.sleep(0.5)
+    left=devwins()
+    if left: note("still open after Escape: "+str(left))
+    for i,n in devwins():
+        sh(f"xdotool windowunmap {i}")
+    time.sleep(1)
+def setf(x,y,text):
+    click(x,y,0.5); key("ctrl+a"); type_(text); time.sleep(0.5)
+def pc_ip(pos,ip,mask,gw,tag):
+    dclick(pos[0],pos[1],4); click(604,129,2); click(505,250,3)
+    click(717,245,1); setf(790,275,ip); setf(790,303,mask)
+    if gw: setf(790,331,gw)
+    click(1000,250,1); time.sleep(1); shot(f"{tag}_ipconfig")
+    note(f"{tag}: "+" ".join(t[0] for t in words(f"{tag}_ipw",15,(460,170,1100,520)))[:200])
+def cmd(pos,cmds,tag):
+    dclick(pos[0],pos[1],4); click(604,129,2)
+    click(905,255,3)
+    for c in cmds:
+        type_(c); key("Return"); time.sleep(4 if c.startswith("ping") or c.startswith("tracert") else 1.5)
+    shot(f"{tag}_cmd"); note(f"{tag} cmd: "+" ".join(t[0] for t in words(f"{tag}_cmdw",15,(460,170,1100,760)))[:500])
+def cli(pos,cmds,tag,wait=1.2):
+    dclick(pos[0],pos[1],4); click(595,129,3); click(800,450,1); key("Return"); time.sleep(2)
+    for c in cmds:
+        type_(c); key("Return"); time.sleep(wait)
+    time.sleep(1); shot(f"{tag}_cli"); note(f"{tag} cli: "+" ".join(t[0] for t in words(f"{tag}_cliw",15,(460,170,1100,760)))[-500:])
