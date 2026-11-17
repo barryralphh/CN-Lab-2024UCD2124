@@ -1,0 +1,4 @@
+WS: PC-PT. PCO PC-PT. Pcl
+mean before 1.0
+cand 255 mean 0.590029 window_opened=False txt=“pet PGO PC-PT. Pcl
+CABLE DETECTED at 255
