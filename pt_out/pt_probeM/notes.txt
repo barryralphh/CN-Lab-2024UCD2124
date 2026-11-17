@@ -1,0 +1,6 @@
+M1 open pc0: [('2097240', 'PC0')]
+M2 after Escape: []
+M3 dclick pc1: []
+M4 retry: []
+M5 after deselect: []
+M6 ws: PC-PT PC-PT. PCO
