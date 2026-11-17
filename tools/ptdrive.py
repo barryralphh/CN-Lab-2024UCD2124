@@ -83,7 +83,7 @@ def ocr_txt(name,region=(460,170,1100,760),minconf=15):
     return " ".join(t[0] for t in words(name,minconf,region))
 def raise_dev(pos,wait=3): dclick(pos[0],pos[1],wait)
 def to_home(tag):
-    for attempt,cand in enumerate([None,(1085,152),(1090,162),(1075,172),(1095,185),(1060,160)]):
+    for attempt,cand in enumerate([None,(1012,152),(1012,153),(1085,152)]):
         if cand: click(cand[0],cand[1],2)
         click(604,129,2)
         t=ocr_txt(f"{tag}_home{attempt}")
@@ -94,10 +94,10 @@ def pc_ip2(pos,ip,mask,gw,tag):
     raise_dev(pos,4); click(604,129,2); click(505,250,3)
     click(717,245,1); setf(790,275,ip); setf(790,303,mask)
     if gw: setf(790,331,gw)
-    click(790,420,1); time.sleep(1); shot(f"{tag}_ipconfig"); note(f"{tag} ip: "+ocr_txt(f"{tag}_ipw")[:160])
+    click(790,420,1); time.sleep(1); shot(f"{tag}_ipconfig"); note(f"{tag} ip: "+ocr_txt(f"{tag}_ipw")[:160]); click(1012,152,2)
 def pc_dhcp(pos,tag):
-    raise_dev(pos,4); click(604,129,2); click(505,250,3); click(701,246,1); time.sleep(10)
-    shot(f"{tag}_dhcp"); note(f"{tag} dhcp: "+ocr_txt(f"{tag}_dhcpw")[:200])
+    raise_dev(pos,4); click(604,129,2); click(505,250,3); click(447,226,1); time.sleep(12)
+    shot(f"{tag}_dhcp"); note(f"{tag} dhcp: "+ocr_txt(f"{tag}_dhcpw")[:200]); click(1012,152,2)
 def cmd2(pos,cmds,tag):
     raise_dev(pos,4)
     if not to_home(tag): return
