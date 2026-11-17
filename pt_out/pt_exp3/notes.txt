@@ -11,3 +11,8 @@ e3_r cli: nter area * - candidate default, U - per-user static route, o - ODR P 
 e3_pc0 ip: Interface FastEthernetO IP Configuration DHCP @) Static IPv4 Address 192.168.1.2 Subnet Mask 255.255.255.0 192.168.1.1 Default Gateway DNS Server 0.0.0.0 IPv6 C
 e3_pc1 ip: Interface FastEthernetO IP Configuration DHCP @) Static IPv4 Address 192.168.2.2 Subnet Mask 255.255.255.0 192.168.2.1 Default Gateway DNS Server 0.0.0.0 IPv6 C
 e3_pc0: could NOT reach Desktop home
+e3_r cli: inter area * - candidate default, U - per-user static route, o - ODR P - periodic downloaded static route is not set Gateway of last resort 192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks 192.168.1.0/24 is directly connected, GigabitEtherneto/o 192.168.1.1/32 is directly connected, GigabitEtherneto/o 192.168.2.0/24 is variably subnetted, 2 subnets, 2 masks 192.168.2.0/24 is directly connected, GigabitEtherneto/1 192.168.2.1/32 is directly connected, GigabitEtherneto/1 Router# Copy Paste
+e3_pc0 ip: Interface FastEthernetO IP Configuration DHCP @) Static IPv4 Address 192.168.1.2 Subnet Mask 255.255.255.0 192.168.1.1 Default Gateway DNS Server 0.0.0.0 IPv6 C
+e3_pc1 ip: Interface FastEthernetO IP Configuration DHCP @) Static IPv4 Address 192.168.2.2 Subnet Mask 255.255.255.0 192.168.2.1 Default Gateway DNS Server 0.0.0.0 IPv6 C
+e3_pc0: home reached on attempt 0
+e3_pc0 cmd: 168.1.1 Bluetooth Connection Connection s ecific ONS Suffi Lin u lL IPv6 Addre Pv6 Addr IPv4 Addre 0.0 Subnr tM Default Gatew ng 1 Pinging 19 168 2 2 with 32 byt of data Request timed out from 1 16 tim ims TTL= Repl by Repl from 192.16 by tes=32 es ims TTL=1 from 1 16 ims TTL Repl byt Ping statis 1 Fc Packets Sent 4 ' Recei\ 3 Lo =1 (2 lo ) ADF imate round trip time in milli n Minimum Maxim Ave ge
