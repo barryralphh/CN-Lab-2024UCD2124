@@ -123,3 +123,7 @@ def cli2(pos,cmds,tag,wait=1.5,prompt_wait=True):
     time.sleep(1.5); shot(f"{tag}_cli"); note(f"{tag} cli: "+ocr_txt(f"{tag}_cliw")[-500:])
 def cabling_wait(tag,sec=45):
     time.sleep(sec); shot(f"{tag}_topology")
+
+# ---- device layout (v2.1): left col x<440, right col x>1120 so device windows (x470-1100) never cover them
+L0=(220,300); L1=(220,440); L2=(220,580)
+R0=(380,300); R1=(1250,440); R2=(1250,600)
