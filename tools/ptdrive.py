@@ -77,3 +77,49 @@ def cli(pos,cmds,tag,wait=1.2):
     for c in cmds:
         type_(c); key("Return"); time.sleep(wait)
     time.sleep(1); shot(f"{tag}_cli"); note(f"{tag} cli: "+" ".join(t[0] for t in words(f"{tag}_cliw",15,(460,170,1100,760)))[-500:])
+
+# ---- v2 helpers: never close windows; devices live in x<440 or x>1120 so windows (x470-1100) never cover them
+def ocr_txt(name,region=(460,170,1100,760),minconf=15):
+    return " ".join(t[0] for t in words(name,minconf,region))
+def raise_dev(pos,wait=3): dclick(pos[0],pos[1],wait)
+def to_home(tag):
+    for attempt,cand in enumerate([None,(1085,152),(1090,162),(1075,172),(1095,185),(1060,160)]):
+        if cand: click(cand[0],cand[1],2)
+        click(604,129,2)
+        t=ocr_txt(f"{tag}_home{attempt}")
+        if "Command" in t and "Prompt" in t:
+            note(f"{tag}: home reached on attempt {attempt}"); return True
+    note(f"{tag}: could NOT reach Desktop home"); return False
+def pc_ip2(pos,ip,mask,gw,tag):
+    raise_dev(pos,4); click(604,129,2); click(505,250,3)
+    click(717,245,1); setf(790,275,ip); setf(790,303,mask)
+    if gw: setf(790,331,gw)
+    click(790,420,1); time.sleep(1); shot(f"{tag}_ipconfig"); note(f"{tag} ip: "+ocr_txt(f"{tag}_ipw")[:160])
+def pc_dhcp(pos,tag):
+    raise_dev(pos,4); click(604,129,2); click(505,250,3); click(701,246,1); time.sleep(10)
+    shot(f"{tag}_dhcp"); note(f"{tag} dhcp: "+ocr_txt(f"{tag}_dhcpw")[:200])
+def cmd2(pos,cmds,tag):
+    raise_dev(pos,4)
+    if not to_home(tag): return
+    click(905,255,3)
+    for c in cmds:
+        type_(c); key("Return"); time.sleep(6 if c.startswith(("ping","tracert")) else 2)
+    time.sleep(2); shot(f"{tag}_cmd"); note(f"{tag} cmd: "+ocr_txt(f"{tag}_cmdw")[-400:])
+def cli2(pos,cmds,tag,wait=1.5,prompt_wait=True):
+    raise_dev(pos,4); click(595,129,3); click(800,450,1); key("Return"); time.sleep(2)
+    t=ocr_txt(f"{tag}_boot")
+    if "initial configuration dialog" in t:
+        type_("no"); key("Return"); time.sleep(6)
+    for k in range(6):
+        t=ocr_txt(f"{tag}_p{k}")
+        if "--More--" in t[-40:]: key("space"); time.sleep(1)
+        elif t.rstrip().endswith((">","#")): break
+        else: key("Return"); time.sleep(2)
+    for c in cmds:
+        type_(c); key("Return"); time.sleep(wait)
+        if c.startswith("show"):
+            time.sleep(1.5)
+            if "--More--" in ocr_txt(f"{tag}_m",15)[-40:]: key("space"); time.sleep(1)
+    time.sleep(1.5); shot(f"{tag}_cli"); note(f"{tag} cli: "+ocr_txt(f"{tag}_cliw")[-500:])
+def cabling_wait(tag,sec=45):
+    time.sleep(sec); shot(f"{tag}_topology")
