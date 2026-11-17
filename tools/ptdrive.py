@@ -119,7 +119,7 @@ def cli2(pos,cmds,tag,wait=1.5,prompt_wait=True):
         type_(c); key("Return"); time.sleep(wait)
         if c.startswith("show"):
             time.sleep(1.5)
-            if "--More--" in ocr_txt(f"{tag}_m",15)[-40:]: key("space"); time.sleep(1)
+            if "--More--" in ocr_txt(f"{tag}_m",minconf=15)[-40:]: key("space"); time.sleep(1)
     time.sleep(1.5); shot(f"{tag}_cli"); note(f"{tag} cli: "+ocr_txt(f"{tag}_cliw")[-500:])
 def cabling_wait(tag,sec=45):
     time.sleep(sec); shot(f"{tag}_topology")
