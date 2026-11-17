@@ -21,3 +21,12 @@ def find(ws,pat):
 def ws_words(name,minconf=20): return words(name,minconf,(150,110,1450,740))
 def note(s):
     print(s,flush=True); open(f"{OUT}/notes.txt","a").write(s+"\n")
+
+def dark(x1,y1,x2,y2,n=60):
+    from PIL import Image
+    p=shot("dark_tmp"); im=Image.open(p).convert("L"); c=0
+    for i in range(n+1):
+        x=x1+(x2-x1)*i//n; y=y1+(y2-y1)*i//n
+        if im.getpixel((x,y))<200: c+=1
+    return c/(n+1)
+def strip_all(name,minconf=10): return words(name,minconf,(190,770,760,860))
